@@ -6,13 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio - Position Fixed e Sticky</title>
     <link rel="stylesheet" href="./src/estilo.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"> 
+    </head>
 <body>
-    <header>
-        <h2>View Agency</h2>
-        <h1>Somos a experiência do seu negócio</h1>
-        <p><small>Oferecemos serviços de software exlusivos para sua marca</small></p>
+    <header class="header">
+        <h2 class="header__item header__item--title2"><span class="span-color">View</span> Agency</h2>
+        <h1 class="header__item header__item--title">Somos a experiência do <span class="span-color">seu negócio</span></h1>
+        <p class="header__item header__item--txt">Oferecemos serviços de software exlusivos para sua marca</p>
+        <form class="header__item header__item--form">
+            <button class="header__item header__item--button">
+                <img src="./assests/img/icons8-whatsapp.svg" alt="">
+                <p>Falar no Whastpp</p> 
+            </button>
+        </form>
     </header>
-    <main></main>
+    <main>
+        <div class="container">
+            <aside class="aside">
+                <h2 class="aside__item aside__item--title">Podemos entrar em contato com você</h2>
+                <p class="aside__item  aside__item--txt">Nos informando seu email podemos entrar em contato com você em menos de 20 minutos</p>
+                <form action="" class="aside__item  aside__form">
+                    <input class="aside__form__item aside__form__item--input" type="email" name="" id="" placeholder="Digite seu email">
+                    <button class="aside__form__item aside__form__item--button" type="submit">Enviar meu contato</button>
+                </form>
+            </aside>
+            <section class="section1">
+                <ul class="section1__list">
+                    <li class="section1__list__item">
+                        <img src="./assests/img/Rectangle 3.png" alt="">
+                        <h3>Site institucional</h3>
+                        <p>Criamos sites modernos com uma alta peformance, trazendo uma capacidade maior na sua presença digital</p>
+                    </li>
+                    <li class="section1__list__item">
+                        <img src="./assests/img/Rectangle 3(1).png" alt="">
+                        <h3>Aplicativos</h3>
+                        <p>Criamos sites modernos com uma alta peformance, trazendo uma capacidade maior na sua presença digital</p>
+                    </li>
+                    <li class="section1__list__item">
+                        <img src="./assests/img/Rectangle 3(2).png" alt="">
+                        <h3>Sistemas</h3>
+                        <p>Criamos sites modernos com uma alta peformance, trazendo uma capacidade maior na sua presença digital</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__item"><span class="span-color">View</span> Agency</h2>
+    </footer>
 </body>
 </html>

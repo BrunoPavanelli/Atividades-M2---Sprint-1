@@ -1,3 +1,4 @@
+/* Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -5,3 +6,223 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-primary: #5F3DC4;
+    --color-span: #EADA79;
+    --grey-1: #878788;
+    --grey-2: #212529;
+    --grey-3: #0F1011;
+    --color-wpp: #2FC195;
+    --white: #fff;
+
+    --fs-700: 3.125rem;
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-450: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: 0.8125rem;
+
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+    --fw-400: 400;
+
+    --ff-primary: 'Raleway', sans-serif;
+    --ff-secondary: 'Inter', sans-serif;
+
+    --border-radius: 0.5rem;
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+/* Header */
+.span-color {
+    color: var(--color-span);
+}
+
+.header {
+    height: 27.625rem;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__item {
+    color: var(--white);
+}
+
+.header__item--title {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
+    margin-top: 6rem;
+}
+
+.header__item--title2 {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-450);
+    font-weight: var(--fw-500);
+    margin-top: 3.75rem;
+}
+
+.header__item--txt {
+    color: var(--white);
+    opacity: 0.7;
+    font-size: var(--fs-450);
+    margin-top: 2rem;
+}
+
+.header__item--form {
+    height: 3.75rem;
+    width: 17.5rem;  
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;   
+}
+
+.header__item--button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-inline: 1rem;
+    background-color: var(--color-wpp);
+    border: 2px solid var(--color-wpp);
+    border-radius: 2rem;
+    font-size: var(--fs-450);
+    font-weight: var(--fw-400);
+
+}
+
+.header__item--button:hover {
+    border: 2px solid var(--grey-3);
+}
+
+.header__item--button img {
+    height: 50%;
+    width: max-content;
+}
+
+/* Main */
+.container {
+    width: 1223px;
+    height: 44.375rem;
+    margin: 4.2rem auto 7.1875rem auto;
+    display: flex;
+    gap: 3.125rem;
+}
+
+/* Aside */
+.aside {
+    width: 31.375rem;
+    height: 28.4375rem;
+    background-color: var(--grey-2);
+    border-radius: var(--border-radius);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 4.2rem;
+}
+
+.aside__item img {
+    width: 100%;
+}
+
+.aside__item--title {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-600);
+    margin-top: 4rem;
+    width: 26.25rem;
+    line-height: 2.25rem;
+}
+
+.aside__item--txt {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    color: var(--white);
+    margin-top: 1rem;
+    width: 26.25rem;
+    font-family: var(--ff-secondary);
+    line-height: 1.85rem;
+}
+
+.aside__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 1.75rem;
+}
+
+.aside__form__item {
+    width: 26.25rem;
+    height: 3.75rem;
+    border-radius: var(--border-radius);
+}
+
+.aside__form__item--input {
+    background-color: var(--grey-3);
+    color: var(--grey-1);
+    border: none;
+    padding-left: 1rem;
+    font-size: var(--fs-450);
+    font-weight: var(--fw-400);
+}
+
+.aside__form__item--button {
+    background-color: var(--color-primary);
+    color: var(--white);
+    border: 2px none var(--grey-3);
+    font-size: var(--fs-450);
+    font-weight: var(--fw-400);
+    transition: 50ms;
+}
+
+.aside__form__item--button:hover {
+    border: 2px inset var(--grey-3);
+}
+
+/* Section */
+.section1__list {
+    width: 42rem;
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.section1__list__item {
+    font-family: var(--ff-secondary);
+    width: 19.875rem;
+    height: 18.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--grey-3);
+}
+
+.section1__list__item p {
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+}
+
+/* Footer */
+footer {
+    height: 6rem;
+    background-color: var(--grey-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    color: var(--white);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-700);
+}
