@@ -1,0 +1,50 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box__confirm {
+    width: 512px;
+    height: 229px;
+    background-color: white;
+    border: 2px solid var(--bg-cancel-input);
+    border-radius: var(--border-radius-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+}
+
+.box__confirm > h1 {
+    color: var(--fc-title);
+    font-size: var(--fs-20);
+    font-weight: var(--fw-600);
+}
+
+.box__form {
+    display: flex;
+    gap: 38px;
+}
+
+.form__input {
+    width: 159px;
+    height: 37px;
+    border-radius: var(--border-radius-400);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-600);
+}
+
+.form__input--cancel {
+    color: var(--fc-cancel);
+}
+
+.form__input--confirm {
+    border: 2px solid var(--color-blue-400);
+    background-color: var(--color-blue-bg);
+    color: var(--color-blue-400);
+}
