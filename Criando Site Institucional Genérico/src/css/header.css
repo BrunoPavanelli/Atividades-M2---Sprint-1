@@ -1,0 +1,28 @@
+/* Header */
+.header__primary {
+    /* width: 100vw;
+    position: fixed; */
+    background-color: var(--grey-800);
+}
+
+.header__primary__box {
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__primary--title {
+    color: var(--grey-200);
+    font-size: var(--fs-28);
+}
+
+.header__primary--btn {
+    height: 3vw;
+    width: 17.6vw;
+    font-weight: var(--fw-600);
+    font-size: var(--fs-18);
+    border: 1px solid var(--grey-200);
+    background-color: transparent;
+    color: var(--grey-200);
+}

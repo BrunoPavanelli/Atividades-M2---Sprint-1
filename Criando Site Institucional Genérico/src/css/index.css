@@ -1,0 +1,23 @@
+/* Geral Config */
+body {
+    font-family: var(--ff);
+    height: 100vh;
+}
+
+.container {
+    width: 76.35vw;
+    margin-inline: auto;
+}
+
+.grey-200 {
+    color: var(--grey-200);
+}
+
+.grey-100 {
+    color: var(--grey-100);
+}
+
+.cpnt {
+    height: var(--cpnt-h);
+    width: var(--cpnt-w);
+}
