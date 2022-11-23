@@ -2,9 +2,17 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-body);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+span {
+    opacity: 0.6;
+    font-size: var(--fs-14);
+    margin-bottom: 15px;
+    text-decoration: underline;
 }
 
 .box__confirm {
@@ -41,10 +49,18 @@ body {
 
 .form__input--cancel {
     color: var(--fc-cancel);
+    font-family: 'Inter', sans-serif;
 }
 
 .form__input--confirm {
     border: 2px solid var(--color-blue-400);
     background-color: var(--color-blue-bg);
     color: var(--color-blue-400);
+    font-family: 'Inter', sans-serif;
+}
+
+.form__input--confirm:hover {
+    background-color: var(--color-blue-400);
+    color: white;
+    box-shadow: 1px 1px 10px 2px var(--fc-cancel)
 }
