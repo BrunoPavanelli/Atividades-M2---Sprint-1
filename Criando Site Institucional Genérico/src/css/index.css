@@ -9,6 +9,10 @@ body {
     margin-inline: auto;
 }
 
+.grey-400 {
+    color: var(--grey-400);
+}
+
 .grey-200 {
     color: var(--grey-200);
 }
@@ -20,4 +24,15 @@ body {
 .cpnt {
     height: var(--cpnt-h);
     width: var(--cpnt-w);
+}
+
+.config-name {
+    font-size: var(--fs-28);
+    font-weight: var(--fw-500);
+}
+
+.config-text {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-400);
+    line-height: var(--lh-prct);
 }

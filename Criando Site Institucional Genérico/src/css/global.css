@@ -29,5 +29,7 @@
     --grey-100: rgba(248, 249, 250, 1);
 
     --cpnt-w: 26vw;
-    --cpnt-h: 3.5vw;   
+    --cpnt-h: 3.5vw; 
+    
+    --padding-100: 5.8vw;
 }

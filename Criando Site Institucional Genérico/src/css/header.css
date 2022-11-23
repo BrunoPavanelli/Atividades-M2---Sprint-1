@@ -1,8 +1,9 @@
 /* Header */
 .header__primary {
-    /* width: 100vw;
-    position: fixed; */
+    width: 100vw;
+    position: fixed;
     background-color: var(--grey-800);
+    z-index: 2;
 }
 
 .header__primary__box {
@@ -25,4 +26,5 @@
     border: 1px solid var(--grey-200);
     background-color: transparent;
     color: var(--grey-200);
+    font-family: var(--ff);
 }
