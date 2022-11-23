@@ -18,20 +18,20 @@
     <script src="./src/scripts/modal.js" defer></script>
 </head>
 <body>
-    <div class="modal__container">
+    <div class="modal__container" id="enter">
         <div class="modal__box">
             <div class="modal__box__container">
                 <h2>Sua ação foi concluida com sucesso!</h2>
                 <p>Aqui fica a descrição do que foi concluído, bem como alguma orientação</p>
-                <button class="btn__ok">Entendi</button>
+                <button class="btn__ok" data-control-modal="enter">Entendi</button>
             </div>
         </div>
     </div>
     <div class="box__confirm">
         <h1>Tem certeza que deseja concluir essa ação?</h1>
         <form class="box__form">
-            <button class="form__input form__input--cancel">Cancelar</button>
-            <button class="form__input form__input--confirm">Concluir Ação</button>
+            <button class="form__input form__input--cancel" >Cancelar</button>
+            <button class="form__input form__input--confirm" data-control-modal="enter">Concluir Ação</button>
         </form>
     </div>
 </body>
