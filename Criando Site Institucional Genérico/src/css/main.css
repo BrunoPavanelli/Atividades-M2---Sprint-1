@@ -41,6 +41,12 @@ main {
     font-weight: var(--fw-600);
     font-family: var(--ff);
     color: var(--grey-200);
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.section__first__btn:hover {
+    background-color: var(--blue-500);
 }
 
 .txtblue {
@@ -109,6 +115,12 @@ main {
     font-size: var(--fs-18);
     font-weight: var(--fw-600);
     font-family: var(--ff);
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.third__left__btn:hover {
+    background-color: var(--blue-500);
 }
 
 .third__right {
@@ -130,6 +142,7 @@ main {
     line-height: var(--lh-30);
     display: none;
     transition: 1s ease-in;
+    animation-play-state: paused;
 }
 
 .show-text {
@@ -137,12 +150,14 @@ main {
     transform: translateY(0);
     opacity: 1;
     animation: animationText-in 1.2s ease;
+    animation-fill-mode: backwards;
     margin-top: 1.85vw;
 }
 
 .hide-text {
     display: block;
     animation: animationText-out 1s ease;
+    animation-fill-mode: backwards;
     transition: margin-top 0.5s ease-in 0.5s;
 }
 

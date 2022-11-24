@@ -4,6 +4,7 @@
     position: fixed;
     background-color: var(--grey-800);
     z-index: 2;
+    box-shadow: 1px 1px 5px var(--grey-600);
 }
 
 .header__primary__box {
@@ -27,4 +28,10 @@
     background-color: transparent;
     color: var(--grey-200);
     font-family: var(--ff);
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.header__primary--btn:hover {
+    background-color: rgba(0,0,0, 0.3);
 }
