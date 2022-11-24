@@ -135,6 +135,10 @@ main {
     /* gap: 1.85vw; */
 }
 
+.third__right__item > div > button > img {
+    cursor: pointer;
+}
+
 .to-toggle {
     font-size: var(--fs-20);
     font-weight: var(--fw-400);
